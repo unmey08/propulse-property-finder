@@ -1,4 +1,5 @@
 import '@/assets/styles/globals.css';
+import Navbar from '@/components/Navbar';
 
 export const metadata = {
     title: 'Propulse | The Perfect Rental Marketplace',
@@ -9,8 +10,12 @@ export const metadata = {
 const layout = ({children}) => {
     return (
         <html lang='en'>
+            <head>
+                <script src="http://localhost:8097"></script>
+            </head>
             <body>
-                <div>{children}</div>
+                <Navbar />
+                <main>{children}</main>
             </body>
         </html>
     )
