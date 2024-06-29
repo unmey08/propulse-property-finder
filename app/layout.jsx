@@ -1,5 +1,6 @@
-import '@/assets/styles/globals.css';
-import Navbar from '@/components/Navbar';
+import '../assets/styles/globals.css';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Propulse | The Perfect Rental Marketplace',
@@ -11,11 +12,11 @@ const layout = ({children}) => {
     return (
         <html lang='en'>
             <head>
-                <script src="http://localhost:8097"></script>
             </head>
             <body>
                 <Navbar />
                 <main>{children}</main>
+                <Footer/>
             </body>
         </html>
     )
