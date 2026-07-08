@@ -4,6 +4,8 @@ import InfoBoxes from "../components/InfoBoxes";
 import HomeProperties from "../components/HomeProperties";
 import connectDB from "../config/database";
 
+export const dynamic = 'force-dynamic'
+
 const HomePage = async () => {
   await connectDB();
   return (
